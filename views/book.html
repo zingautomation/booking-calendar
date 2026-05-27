@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book an Appointment | {{CLIENT_NAME}}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <h1>Book an Appointment</h1>
+    <p class="subtitle">with <strong class="client-name">{{CLIENT_NAME}}</strong></p>
+
+    <form id="booking-form" novalidate>
+      <input type="hidden" id="client-id" value="{{CLIENT_ID}}">
+
+      <label for="date">Select a date</label>
+      <input type="date" id="date" required>
+
+      <label>Select a time slot</label>
+      <div id="slots" aria-live="polite"></div>
+
+      <label for="name">Your name</label>
+      <input type="text" id="name" autocomplete="name" required>
+
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" autocomplete="tel" value="+972 " placeholder="+972 5X XXX XXXX" required>
+
+      <button type="submit" id="submit-btn">Confirm Booking</button>
+    </form>
+
+    <div id="message" role="status"></div>
+  </main>
+  <script src="/static/script.js"></script>
+</body>
+</html>
