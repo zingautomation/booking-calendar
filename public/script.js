@@ -151,7 +151,7 @@ form.addEventListener('submit', async (e) => {
   }
 
   const leadName = document.getElementById('name').value.trim();
-  const leadPhone = phoneInput.value.trim();
+  const leadPhone = phoneInput.value.replace(/\s+/g, '');
 
   if (!leadName) {
     showMessage('Please enter your name.', 'error');
