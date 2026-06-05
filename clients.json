@@ -29,6 +29,17 @@
       "Saturday":  []
     }
   },
+  "zingautomation": {
+    "schedule": {
+      "Sunday":    ["20:00", "20:30"],
+      "Monday":    ["20:00", "20:30"],
+      "Tuesday":   ["20:00", "20:30"],
+      "Wednesday": ["20:00", "20:30"],
+      "Thursday":  ["20:00", "20:30"],
+      "Friday":    [],
+      "Saturday":  []
+    }
+  },
   "default": {
     "schedule": {
       "default":  ["09:00", "10:00", "11:00", "13:00", "14:00", "15:00", "16:00"],
